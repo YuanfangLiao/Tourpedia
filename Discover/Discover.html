@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="Discover/jquery-3.2.1.js" >
+</script>
+
+<script>
+$(document).ready(function(e) {
+    $("img").hover(function(e){
+		this.src=this.src.replace(").jpeg",")1.jpg");
+	},
+	function(e){
+		this.src=this.src.replace(")1.jpg",").jpeg");
+	});
+});
+</script>
+<link href="Discover/Discoverstyle.css" rel="stylesheet" />  
+<title>Discover</title>
+</head>
+
+<body id="top">
+<div class="header">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="9%" class="logo">&nbsp;&nbsp;&nbsp;<a href="../Home.html"><img id="logo" src="Discover/logo.png" width="50px" height="50px"/></a></td>
+    <td width="28%" ><h3><a href="../Home.html">Tourpedia</a></h3></td>
+    <td width="2%" ></td>
+    <td width="2%" ></td>
+    <td width="59%" class="mostright">
+    <a href="../Home.html" class="button1">Home</a>&nbsp;
+    
+    <a  class="button3" >Discover</a>&nbsp;
+    
+    <a href="../detination/Destination.html" class="button1">Destination</a>&nbsp;
+    
+    <a href="../Strategy/Strategy.html" class="button1">Strategy</a>&nbsp;
+    
+    <a href="../Book_Tickets/TicketsBooking.html" class="button1">BookTickets</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+  </tr>
+</table>
+</div>
+
+
+
+
+<div class="firstdiv">
+<img src="Discover/discover1.jpg" class="pic1"  />
+</div>
+<div class="seconddiv">
+<form>
+DISCOVER
+</form>
+<table class="pic2">
+  <tr class="pictr">
+    <td class="border1"><img src="Discover/discover(jiangsu).jpeg" width="100%" /></td>
+    <td class="border1"><img src="Discover/discover(xizang).jpeg" width="100%" /></td>
+  </tr>
+  <tr>
+    <td class="border1"><p class="word">JiangSu province,one of the most beautiful province in the world.</p></td>
+    <td class="border1"><p class="word">Tibet,the most mysterious place in China</p></td>
+  </tr>
+  <tr class="pictr">
+    <td class="border1"><img src="Discover/discover(beijing).jpeg" width="100%"  /></td>
+    <td class="border1"><img src="Discover/discover(fujian).jpeg" width="100%" /></td>
+  </tr>
+  <tr>
+    <td class="border1"><p class="word">Beijing,the capital of China</p></td>
+    <td class="border1"><p class="word">Fujian,a beautiful seaside province in China,famous of Xiamen</p></td>
+  </tr>
+</table>
+</div>
+
+<div class="thirddiv">
+<form>GO TO Dali</form>
+<video width="100%" src="Discover/video.mp4" controls="controls" >
+</div>
+
+<div class="footer">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="22%"><a  href="../Home.html"><h2>&nbsp;&nbsp;&nbsp;&nbsp;Tourpedia</h2></a></td>
+    <td width="14%"></td>
+    <td width="29%">&nbsp;</td>
+    <td width="4%">&nbsp;</td>
+    <td width="4%">&nbsp;</td>
+    <td width="27%" class="mostright">
+    <a href="#top" class="button2">Back to top</a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

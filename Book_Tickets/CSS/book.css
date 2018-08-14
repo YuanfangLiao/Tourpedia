@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(bg.jpg);
+	background-repeat:repeat;
+	margin:0;
+	width:100%;}
+	
+
+.header{
+	z-index:100;
+    left:0px;
+    top:0px;
+	background:linear-gradient(to top right,#069,#099);
+	width:100%;
+	position:fixed;
+	box-shadow:rgba(0,0,0,0.5)0px 10px 10px 0px;}
+	
+.footer1{
+	margin-top:150px;
+	background:linear-gradient(to bottom left,#069,#099);
+	width:100%;
+	}
+	
+h3{
+	color:#FFF;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+h2{
+	color:#FFF;
+	font-size:15px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+.button1{
+	color:#FFF;
+	font-size:20px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration:none;
+	opacity:0.7;
+	}
+.button1:hover{
+	opacity:1;}
+	
+.button2{
+	color:#FFF;
+	font-size:18px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration:none;
+	opacity:0.7;
+	}
+.button2:hover{
+	opacity:1;}
+
+.button3{
+	color:#FFF;
+	font-size:20px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-decoration:none;
+	opacity:0.7;
+	border-bottom:3px solid #FF8116;
+	}
+h3 a{
+	text-decoration:none;
+	color:#FFF;}
+h2 a{
+	text-decoration:none;
+	color:#FFF;}
+.mostright{
+	text-align:right;}
+	
+.firstdiv{
+	width:80%;
+	margin-top:100px;
+	margin-left:auto; 
+	margin-right:auto; 
+	}
+.seconddiv{
+	width:80%;
+	margin-top:50px;
+	margin-left:auto; 
+	margin-right:auto; 
+	}
+	
+#flights
+{
+	margin:0px auto;
+	}
+
+.pic1{
+	box-shadow:rgba(0,0,0,0.5)0px 5px 5px 0px;
+	width:100%;}
+
+#booktickets{
+	color:#FFF;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:40px;
+	text-align:left;
+}
+#booktable{
+	width:60%;
+	margin-top:50px;
+	margin-left:auto; 
+	margin-right:auto; 
+	border:3px solid #999;
+	background:linear-gradient(to top right,#069,#099);
+	border-radius:15px;
+	font-family:"Lucida Console", Monaco, monospace;
+	}
+
+#booktable #toptable{
+	background:linear-gradient(to top right,#096,#0C0);
+	border-radius:15px;
+	text-align:center;
+	font-size:24px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+}
+.button4{
+	width:80%;
+	line-height: 38px;
+	text-align: center;
+	font-weight: bold;
+	color:#FFF;
+	text-shadow:1px 1px 1px #333;
+	border-radius: 5px;
+	overflow: hidden;
+	border:2px solid #999;
+	background:linear-gradient(to top right,#3C9,#3C3);	
+	margin:0 10px 10px 0;
+	position: relative;
+	overflow: hidden;
+	}
+.button4:hover{
+	background:linear-gradient(to top right,#3C3,#3F0);
+	}
+.button4:active{
+	top:1px;
+	box-shadow: 0 1px 3px #114566 inset,0 3px 0 #fff;
+	background:linear-gradient(to top right,#3F0,#3C3);
+	}
+.button4 a{
+	text-decoration:none;
+	color:#FFF;}
+
+#booktable tr{
+	height:50px;}
+#booktable select
+{
+	background:#CCC;
+	opacity:0.9;
+	border-radius:5px;
+	height:25px;}
+#username,
+#mobile,
+#date{
+	background:#CCC;
+	opacity:0.9;
+	border-radius:5px;
+	height:25px;
+	}
+option{
+	background:#CCC;
+	opacity:0.9;
+	border-radius:5px;
+	}
+
+#hide{
+	position:absolute;
+	margin-top:50px;
+	background:linear-gradient(to top right,#069,#06C);
+	border-radius:5px;
+	border:3px solid #999;
+	color:#FFF;
+	font-size:24px;}
+.hideModal{
+	border-radius:45px;
+	background:#999;}

@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TicketsBooking</title>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.leanModal.min.js"></script>
+
+<link type="text/css" href="CSS/book.css"  rel="stylesheet" />
+
+<script type="text/javascript">
+function saveInfo(){
+	if(typeof(Storage)==undefined){
+		alert("Storage Note Supported");
+	}
+	else
+	{
+		var uname=document.getElementById("username").value;
+		var utel=document.getElementById("mobile").value;
+		var sp1=$("#sp").find("option:selected").text();
+		var des1=$("#des").find("option:selected").text();
+		var acc1=$("#acc").find("option:selected").text();
+		var date1=document.getElementById("date").value;
+		localStorage.setItem("username",uname);
+		localStorage.setItem("mobile",utel);
+		localStorage.setItem("sp",sp1);
+		localStorage.setItem("des",des1);
+		localStorage.setItem("acc",acc1);
+		localStorage.setItem("date",date1);
+		
+		
+	alert("Please check Your Information:\rName:"+uname
+
++"\rTel:"+utel);
+	}
+}
+</script>
+<script type="text/javascript">
+function showInfo(){
+	var uname=localStorage.getItem("username");
+	var utel=localStorage.getItem("mobile");
+	var sp1=localStorage.getItem("sp");
+	var des1=localStorage.getItem("des");
+	var acc1=localStorage.getItem("acc");
+	var date1=localStorage.getItem("date")
+	document.getElementById("uname").innerHTML=uname;
+	document.getElementById("utel").innerHTML=utel;
+	document.getElementById("sp1").innerHTML=sp1;
+	document.getElementById("des1").innerHTML=des1;
+	document.getElementById("acc1").innerHTML=acc1;
+	document.getElementById("date1").innerHTML=date1;
+	
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".loginbtn").click(function(e){
+		if($("#passwd").val()=="123456")
+		{
+			$("#user").html($("#username").val());
+		}
+		else{
+			alter("Incorrect Password");
+		}
+	});
+	$("#modal").leanModal({top:150,opacity:1,closeButton:".hideModal"});
+	
+});
+</script>
+</head>
+
+<body id="top">
+<div class="header">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="9%" class="logo">&nbsp;&nbsp;&nbsp;<a href="../Home.html"><img id="logo" src="logo.png" width="50px" height="50px"/></a></td>
+    <td width="28%" ><h3><a href="../Home.html">Tourpedia</a></h3></td>
+    <td width="2%" ></td>
+    <td width="2%" ></td>
+    <td width="59%" class="mostright">
+    <a href="../Home.html" class="button1">Home</a>&nbsp;
+    
+    <a href="../Discover/Discover.html" class="button1" >Discover</a>&nbsp;
+    
+    <a href="../detination/Destination.html" class="button1">Destination</a>&nbsp;
+    
+    <a href="../Strategy/Strategy.html" class="button1">Strategy</a>&nbsp;
+    
+    <a class="button3">BookTickets</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div class="firstdiv">
+<img src="bookbg.jpg" class="pic1"  />
+</div>
+
+<div class="seconddiv">
+<form id="booktickets">
+BOOK TICKETS
+</form>
+
+<form id="flights">
+<table id="booktable">
+  <tr> 
+  <td width="100%" colspan="4" id="toptable">Book Your Tickets Online
+  </td>
+  </tr>
+<tr>
+  <td>Name</td><td><input type="text" id="username" placeholder="Enter Your Name" required="required"/></td>
+  </tr>
+    <tr>
+    <td>Tel</td>
+  <td>
+  <input type="tel" id="mobile" placeholder="Enter Your Tel" required="required"> </td></tr>
+  <tr>
+    <td>From:<select id="sp">
+    <option value="opt0">Select Your Starting point</option>
+    <option value="opt1">Beijing</option>
+    <option value="opt2">Shanghai</option>
+    <option value="opt3">GuangZhou</option>
+    <option value="opt4">ShenZhen</option>
+    <option value="opt5">TianJin</option>
+    <option value="opt6">ChengDu</option>
+    <option value="opt7">SuZhou</option>
+    <option value="opt8">HangZhou</option>
+    <option value="opt9">ChongQing</option>
+    <option value="opt10">WuHan</option>
+    <option value="opt11">ShenYang</option>
+    <option value="opt12">DaLian</option>
+    <option value="opt13">NanJing</option>
+    <option value="opt14">ChangSha</option>
+    <option value="opt15">ZhenZhou</option>
+    <option value="opt16">QingDao</option>
+    <option value="opt17">XiAn</option>
+    <option value="opt18">WuXi</option>
+    <option value="opt19">JiNan</option>
+    <option value="opt20">NingBo</option>
+    <option value="opt21">FoShan</option>
+    <option value="opt22">ChangChun</option>
+    <option value="opt23">FuZhou</option>
+    <option value="opt24">YanTai</option>
+    <option value="opt25">NanTong</option>
+    <option value="opt26">ShiJiaZhuang</option>
+    <option value="opt27">HaErBin</option>
+    <option value="opt28">DongWan</option>
+    <option value="opt29">TangShan</option>
+    <option value="opt30">TaiYuan</option>
+    <option value="opt31">ChangZhou</option>
+    <option value="opt32">WenZhou</option>
+    </select></td>
+    <td>To:<select id="des">
+    <option value="opt0">Select Your Destination</option>
+    <option value="opt1">Beijing</option>
+    <option value="opt2">Shanghai</option>
+    <option value="opt3">GuangZhou</option>
+    <option value="opt4">ShenZhen</option>
+    <option value="opt5">TianJin</option>
+    <option value="opt6">ChengDu</option>
+    <option value="opt7">SuZhou</option>
+    <option value="opt8">HangZhou</option>
+    <option value="opt9">ChongQing</option>
+    <option value="opt10">WuHan</option>
+    <option value="opt11">ShenYang</option>
+    <option value="opt12">DaLian</option>
+    <option value="opt13">NanJing</option>
+    <option value="opt14">ChangSha</option>
+    <option value="opt15">ZhenZhou</option>
+    <option value="opt16">QingDao</option>
+    <option value="opt17">XiAn</option>
+    <option value="opt18">WuXi</option>
+    <option value="opt19">JiNan</option>
+    <option value="opt20">NingBo</option>
+    <option value="opt21">FoShan</option>
+    <option value="opt22">ChangChun</option>
+    <option value="opt23">FuZhou</option>
+    <option value="opt24">YanTai</option>
+    <option value="opt25">NanTong</option>
+    <option value="opt26">ShiJiaZhuang</option>
+    <option value="opt27">HaErBin</option>
+    <option value="opt28">DongWan</option>
+    <option value="opt29">TangShan</option>
+    <option value="opt30">TaiYuan</option>
+    <option value="opt31">ChangZhou</option>
+    <option value="opt32">WenZhou</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+  <td>Accommodates</td>
+  <td>
+  <select id="acc"><option value="acc">-persons-</option>
+  <option value="person1">1 Person</option>
+  <option value="person2">2 Persons</option>
+  <option value="person3">3 Persons</option>
+  <option value="person4">4 Persons</option>
+  <option value="person5">5 Persons</option>
+  <option value="person6">6+ Persons</option>
+  </select>
+  </td>
+  
+  </tr>
+  <tr>
+    <td>Date of Bookings</td>
+    <td><input type="date" id="date" required="required" /></td>
+  </tr>
+<tr>
+<td style="text-align:center"><input type="submit" class="button4" onclick="saveInfo()"  value="Check Your information"></input>
+</td>
+<td style="text-align:center"><button class="button4"><a href="#hide" id="modal" class="modalbtn" onclick="showInfo()">To generate orders</a></button></td>
+</tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+
+<div id="hide" style="display:none;">
+<input type="button" class="hideModal" value="X"/>
+<h6>Name : <span id="uname"></span></h6>
+<h6>Tel : <span id="utel"></span></h6>
+<h6>Srarting point:<span id="sp1"></span></h6>
+<h6>Destination:<span id="des1"></span></h6>
+<h6>Accommodates:<span id="acc1"></span></h6>
+<h6>Date: <span id="date1"></span></h6>
+
+</div>
+
+ <div class="footer1">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="22%"><h2><a  href="../Home.html">&nbsp;&nbsp;&nbsp;&nbsp;Tourpedia</a></h2></td>
+    <td width="14%"></td>
+    <td width="29%">&nbsp;</td>
+    <td width="4%">&nbsp;</td>
+    <td width="4%">&nbsp;</td>
+    <td width="27%" class="mostright">
+    <a href="#top" class="button2">Back to top</a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+</table>
+</div> 
+</body>
+</html>

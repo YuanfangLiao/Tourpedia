@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.firstdiv{
+	margin-top:130px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:80%;
+	}
+.show1{
+	width: 200px;
+	line-height: 38px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	text-shadow:1px 1px 1px #333;
+	border-radius: 5px;
+	margin:0 20px 20px 0;
+	position: relative;
+	overflow: hidden;
+	border:1px solid #1e7db9;
+	box-shadow: 0 -1px 0 #497897 inset,0 -2px 0 #8FCAEE inset,1px 0 0 #8FCAEE inset;
+	background:-webkit-linear-gradient(top left,#42A4E0,#2E88C0);
+	background:-moz-linear-gradient(top left,#42A4E0,#2E88C0);
+	background:linear-gradient(top left,#42A4E0,#2E88C0); 
+	}
+.show1:active{
+	top:1px;
+	box-shadow: 0 1px 3px #114566 inset,0 3px 0 #fff;
+	background: -webkit-linear-gradient(top,#1a71a8,#1976b1);
+	background: -moz-linear-gradient(top,#1a71a8,#1976b1);
+	background: linear-gradient(top,#1a71a8,#1976b1);
+}
+.show1:hover{background:-webkit-linear-gradient(top 	left,#70bfef,#4097ce);
+	background:-moz-linear-gradient(top left,#70bfef,#4097ce);
+	background:linear-gradient(top left,#70bfef,#4097ce);}
+#im1{
+	box-shadow:rgba(0,0,0,0.5)0px 5px 5px 0px;
+	border-radius:5px; 
+	width:80%;
+	}
+#im2{
+	box-shadow:rgba(0,0,0,0.5)0px 5px 5px 0px;
+	border-radius:5px; 
+	width:100%;
+	}
+.text1{
+	font-size:20px;
+	color:#000;
+	font-family:"Lucida Console", Monaco, monospace;
+	font-weight:bold;
+	text-align:left;
+	}
+form{
+	color:#000;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:40px;
+	text-align:center;
+	}
+table{
+	table-layout:fixed;
+}
